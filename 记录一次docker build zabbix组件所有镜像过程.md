@@ -1,5 +1,5 @@
 本次测试使用了aws，貌似不用三分钟就构建完所有镜像了···
-```
+
 [root@localhosts zabbix-docker]# docker-compose -f docker-compose_v3_alpine_mysql_local.yaml build
 WARNING: Some services (zabbix-agent, zabbix-java-gateway, zabbix-proxy-mysql, zabbix-proxy-sqlite3, zabbix-server, zabbix-snmptraps, zabbix-web-apache-mysql, zabbix-web-nginx-mysql) use the 'deploy' key, which will be ignored. Compose does not support 'deploy' configuration - use `docker stack deploy` to deploy to a swarm.
 mysql-server uses an image, skipping
@@ -2904,4 +2904,4 @@ Removing intermediate container ccf205b3c149
 
 Successfully built c878a343e32c
 Successfully tagged zabbix-proxy-sqlite3:alpine-local
-```
+
