@@ -303,6 +303,8 @@ services:
    cache_from:
     - alpine:3.10
   image: zabbix-agent:alpine-local
+  environment:
+    - ZBX_HOSTNAME=${HOSTNAME}  
   ports:
    - "10050:10050"
   volumes:
