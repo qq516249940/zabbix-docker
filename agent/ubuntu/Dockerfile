@@ -1,5 +1,6 @@
 FROM ubuntu:bionic as builder
 
+#test
 ARG APT_FLAGS_COMMON="-y"
 ARG APT_FLAGS_DEV="${APT_FLAGS_COMMON} --no-install-recommends"
 
