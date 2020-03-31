@@ -49,6 +49,6 @@ Before you start to code, we recommend discussing your plans through a [GitHub i
 
 ## how to run zabbix agent
 ```
-docker run --name some-zabbix-agent -e ZBX_HOSTNAME=${HOSTNAME} -e ZBX_SERVER_HOST="172.31.74.252"  --privileged -p 10050:10050  --restart=always -d zabbix/zabbix-agent:latest
+docker run --name some-zabbix-agent -e ZBX_HOSTNAME=${HOSTNAME} -e ZBX_SERVER_HOST="172.31.74.252" -v /docker-agent:/docker-agent --privileged -p 10050:10050  --restart=always -d zabbix/zabbix-agent:latest
 
 ```
